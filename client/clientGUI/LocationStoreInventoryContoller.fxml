@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.LocationStoreInventoryContoller">
+   <children>
+      <AnchorPane layoutX="554.0" prefHeight="651.0" prefWidth="253.0" style="-fx-background-color: #ff9239;">
+         <children>
+            <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <TableView fx:id="tableItems" layoutX="105.0" layoutY="149.0" prefHeight="352.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="col_Id" prefWidth="178.0" text="ID" />
+            <TableColumn fx:id="col_Amount" prefWidth="185.0" text="amount" />
+        </columns>
+      </TableView>
+      <Label fx:id="thresholdLabel" layoutX="14.0" layoutY="111.0" prefHeight="21.0" prefWidth="483.0" />
+      <Button fx:id="saveBtn" layoutX="218.0" layoutY="561.0" mnemonicParsing="false" onAction="#saveTable" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="592.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="117.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="154.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory refilling">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="186.0" layoutX="296.0" layoutY="98.0" startX="-190.90118408203125" />
+      <Label fx:id="errorMsg" layoutX="105.0" layoutY="517.0" prefHeight="27.0" prefWidth="318.0" textAlignment="JUSTIFY" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="msgDisplay" layoutX="103.0" layoutY="513.0" prefHeight="27.0" prefWidth="354.0" textAlignment="JUSTIFY" textFill="#308035">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeMsg" layoutX="118.0" layoutY="77.0" prefHeight="21.0" prefWidth="346.0" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="noOrderSelected" layoutX="105.0" layoutY="516.0" prefHeight="21.0" prefWidth="346.0" />
+   </children>
+</Pane>

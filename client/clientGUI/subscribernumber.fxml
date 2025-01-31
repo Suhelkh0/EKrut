@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.SubscribernumberController">
+   <children>
+      <Text fill="#4fbc31" layoutX="-12.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The costumer has been registered as a subscriber sucssefully!" textAlignment="CENTER" wrappingWidth="519.201171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The subscriber number is:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="subscriber_number" editable="false" layoutX="30.0" layoutY="278.0" />
+      <Button fx:id="btnHome" layoutX="66.0" layoutY="431.0" mnemonicParsing="false" onAction="#homeBtn" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="500.0" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #ff9239;">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="150.0" fitWidth="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <Text layoutX="101.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscriber number ">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="178.5" endY="-6.0" layoutX="234.0" layoutY="97.0" startX="-167.5" startY="-6.0" />
+      <ImageView fx:id="SubscriberNumber" fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

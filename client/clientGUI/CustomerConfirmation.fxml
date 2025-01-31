@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.CustomerConfirmationController">
+   <children>
+      <Label layoutX="34.0" layoutY="240.0" text="Please Choose order number for confirmation:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ChoiceBox fx:id="ordersNumbers" layoutX="34.0" layoutY="310.0" prefHeight="31.0" prefWidth="227.0" style="-fx-background-color: white; -fx-border-color: #ff9239;" />
+      <Label fx:id="itemNumber" layoutY="354.0" prefHeight="89.0" prefWidth="452.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Label>
+      <ChoiceBox fx:id="setStatus" layoutX="34.0" layoutY="446.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: #ff9239;" />
+      <Button fx:id="submitBtn" layoutX="311.0" layoutY="310.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="saveBtn" layoutX="200.0" layoutY="535.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label fx:id="msgDisplay" layoutX="34.0" layoutY="491.0" prefHeight="21.0" prefWidth="346.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="successfullMsg" layoutX="34.0" layoutY="504.0" prefHeight="27.0" prefWidth="331.0" textFill="#29bc30">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="580.0" prefHeight="600.0" prefWidth="220.0" style="-fx-background-color: #fe8131;">
+         <children>
+            <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+      <Label fx:id="statusPending" layoutX="34.0" layoutY="507.0" prefHeight="21.0" prefWidth="346.0" />
+      <Text layoutX="62.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Costumer Confirmation page">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="216.5" layoutX="267.0" layoutY="107.0" startX="-183.5" />
+      <ImageView fx:id="customer" fitHeight="150.0" fitWidth="200.0" layoutX="367.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="backBtn" layoutY="554.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="104.0" text="back" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</Pane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.SubscriberRegisteringController">
+   <children>
+      <AnchorPane layoutX="480.0" prefHeight="500.0" prefWidth="220.0" style="-fx-background-color: #ff9239;">
+         <children>
+            <Button fx:id="backBtn" layoutX="36.0" layoutY="396.0" mnemonicParsing="false" onAction="#getBackBtn" text="Back" />
+            <Button fx:id="btnHome" layoutX="139.0" layoutY="394.0" mnemonicParsing="false" onAction="#getHomeBtn" text="Home" />
+            <ImageView fx:id="logoImage" fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="73.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscriber registering">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="186.5" layoutX="223.0" layoutY="77.0" startX="-158.5" />
+      <Text fill="RED" layoutX="21.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The custumer is not a subscriber yet!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you want to register the costumer as a subscriber?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnYes" layoutX="111.0" layoutY="422.0" mnemonicParsing="false" onAction="#getYesBtn" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Yes" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNo" layoutX="283.0" layoutY="422.0" mnemonicParsing="false" onAction="#getNoButton" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="No" textFill="WHITE" />
+      <Label fx:id="noBtnLabel" layoutX="152.0" layoutY="377.0" prefHeight="23.0" prefWidth="170.0" textFill="#ff0c0c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="CostumerRegister" fitHeight="150.0" fitWidth="200.0" layoutX="152.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
