@@ -6,7 +6,7 @@
 
 It allows users to place, manage, and fulfill food orders through **On-Site (EK)** and **Online (OL)** services.
 
-🚀 **Developed by:** A team of 5 members during the 5th semester  
+🚀 **Developed by:** A team of 5 members.
 💻 **Tech Stack:** Java, JavaFX, OCSF API, JUnit, Jubula, MySQL  
 📂 **Repository Branches:** `client` and `server`
 
