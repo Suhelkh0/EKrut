@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.DiscountController">
+   <children>
+      <Pane layoutY="49.0" prefHeight="602.0" prefWidth="800.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="162.0" layoutY="592.0" mnemonicParsing="false" onAction="#discountButtonOnAction" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Apply" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Text layoutX="44.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount name:">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            
+            <TextField fx:id="discount_name" layoutX="273.0" layoutY="240.0" promptText="Black friday" />
+            <Button fx:id="backBtn" layoutX="14.0" layoutY="592.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="117.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+            <Label fx:id="msg" layoutX="42.0" layoutY="548.0" prefHeight="40.0" prefWidth="507.0" textFill="RED" />
+            <Button fx:id="logOutBtn" layoutX="340.0" layoutY="592.0" mnemonicParsing="false" onAction="#LogOutButtonOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="log out" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="41.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set sale price:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="salePrice" layoutX="273.0" layoutY="294.0" promptText="50" />
+            <Text layoutX="45.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set sale end date:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set sale end time:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="saleEndDate" layoutX="273.0" layoutY="450.0" promptText="2022-01-02" />
+            <TextField fx:id="SaleEndTime" layoutX="273.0" layoutY="502.0" promptText="12:30" />
+            <Text layoutX="44.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Snack id:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="orderID" fill="#222222" layoutX="273.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" wrappingWidth="117.017578125">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order name:">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="orderName" layoutX="273.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="148.5059814453125">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text layoutX="41.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price before discount:">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text fx:id="price" layoutX="271.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="before" wrappingWidth="138.0146484375">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text layoutX="43.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set sale start date:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="StartDate" layoutX="275.0" layoutY="341.0" prefHeight="26.0" prefWidth="156.0" promptText="2024-02-01" />
+            <Text layoutX="43.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set sale start time:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="StartTime" layoutX="273.0" layoutY="393.0" promptText="12:30" />
+            <AnchorPane layoutX="580.0" layoutY="-49.0" prefHeight="700.0" prefWidth="220.0" style="-fx-background-color: #ff9239;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../noBackgroundLogo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Text layoutX="15.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To initiate a sale please fill in the details:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Line endX="144.5" layoutX="340.0" layoutY="26.0" startX="-203.5" />
+            <ImageView fitHeight="98.0" fitWidth="124.0" layoutX="369.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../black-line-icon-sales-business-purchase-trade-purchasing-deal-card-trademark-168769115.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text layoutX="236.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initiate sale">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

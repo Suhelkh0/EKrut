@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.DiscountInitFirstPageController">
+   <children>
+      <Pane prefHeight="511.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+         
+            <Button layoutX="54.0" layoutY="441.0" mnemonicParsing="false" onAction="#EnterBTN" style="-fx-background-color: #ff9239; -fx-background-radius: 100;" text="Enter" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font></Button>
+            <Label fx:id="msg" layoutX="54.0" layoutY="373.0" prefHeight="34.0" prefWidth="237.0" textFill="RED" />
+            <Text layoutX="47.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="please enter snack ID:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="OrderID" layoutX="49.0" layoutY="220.0" promptText="2" />
+            <Text layoutX="47.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose the branch:">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <ComboBox fx:id="chooseBranch" layoutX="45.0" layoutY="321.0" prefWidth="150.0" promptText="Branch name" style="-fx-background-color: white; -fx-border-color: #ff9239;" />
+            <AnchorPane layoutX="406.0" layoutY="-3.0" prefHeight="518.0" prefWidth="200.0" style="-fx-background-color: #ff9239;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../noBackgroundLogo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                     <Button layoutX="63.0" layoutY="426.0" mnemonicParsing="false" onAction="#LogOutButtonOnAction" prefHeight="43.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="logOut" textFill="#ff9239">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                  <Button layoutX="63.0" layoutY="356.0" mnemonicParsing="false" onAction="#back" prefHeight="43.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="back" textFill="#ff9239">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text layoutX="120.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount Initiate">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="135.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chosing snack ID and branch">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Line endX="150.5" layoutX="227.0" layoutY="110.0" startX="-133.5" />
+            <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="331.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../360_F_90200766_RZ161wQwlsHsHtMLYZqYUU5Uydsi0frH.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
