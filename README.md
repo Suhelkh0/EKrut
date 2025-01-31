@@ -13,7 +13,6 @@ It allows users to place, manage, and fulfill food orders through **On-Site (EK)
 ## 📜 Table of Contents
 - [🛠 Features](#-features)
 - [🧑‍💻 User Roles](#-user-roles)
-- [📸 Screenshots](#-screenshots)
 - [🚀 System Architecture](#-system-architecture)
 - [🔧 Technologies Used](#-technologies-used)
 
@@ -43,15 +42,6 @@ EKrut has multiple **user roles**, each with specific functionalities:
 | **Marketing Manager** | Plans promotions and campaigns |
 | **Marketing Worker** | Executes marketing strategies |
 | **Operation Worker** | Manages daily operations in facilities |
-
----
-
-## 📸 **Screenshots**
-| Feature  | Screenshot |
-|----------|-----------|
-| **Login Page** | ![Login](docs/images/login.png) |
-| **Order Placement** | ![Order](docs/images/order.png) |
-| **Admin Dashboard** | ![Admin](docs/images/admin-dashboard.png) |
 
 ---
 
