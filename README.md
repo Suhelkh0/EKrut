@@ -15,12 +15,7 @@ It allows users to place, manage, and fulfill food orders through **On-Site (EK)
 - [🧑‍💻 User Roles](#-user-roles)
 - [📸 Screenshots](#-screenshots)
 - [🚀 System Architecture](#-system-architecture)
-- [📦 Installation](#-installation)
 - [🔧 Technologies Used](#-technologies-used)
-- [📝 UML & Design](#-uml--design)
-- [🛠 Development & Testing](#-development--testing)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
 
 ---
 
