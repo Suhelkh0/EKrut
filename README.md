@@ -62,7 +62,7 @@ This project is divided into **two branches**:
 
 ---
 
-📜 **Technologies Used in Each Branch**
+📜 **Technologies Used**
 | Branch  | Technologies |
 |---------|-------------|
 | **Client**  | JavaFX, SceneBuilder, OCSF API |
