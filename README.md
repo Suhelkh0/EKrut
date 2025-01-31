@@ -46,9 +46,9 @@ EKrut has multiple **user roles**, each with specific functionalities:
 ---
 
 ## 🚀 **System Architecture**
-This project is divided into Server and Client:
-1. **Client (`client`)** – Handles the **UI & User Interaction** using **JavaFX**  
-2. **Server (`server`)** – Manages **requests, database operations, and business logic**  
+This project is divided into Client and Server:
+1. **Client ** – Handles the **UI & User Interaction** using **JavaFX**  
+2. **Server ** – Manages **requests, database operations, and business logic**  
 
 ---
 
