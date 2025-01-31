@@ -2,7 +2,9 @@
 
 ![EKrut](docs/images/ekrut-banner.png)
 
-**EKrut (Electrical Krut)** is a food service management system developed using **TCP/IP networking**, JavaFX, and MySQL. It allows users to place, manage, and fulfill food orders through **On-Site (EK)** and **Online (OL)** services.
+**EKrut (Electrical Krut)** is a food service management system developed using **TCP/IP networking**, JavaFX, and MySQL. 
+
+It allows users to place, manage, and fulfill food orders through **On-Site (EK)** and **Online (OL)** services.
 
 🚀 **Developed by:** A team of 5 members during the 5th semester  
 💻 **Tech Stack:** Java, JavaFX, OCSF API, JUnit, Jubula, MySQL  
